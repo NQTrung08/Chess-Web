@@ -1,0 +1,5 @@
+{
+  "./**/*.{js,jsx}": [
+    "eslint . --fix --ext js,jsx --report-unused-disable-directives"
+   ]
+}
