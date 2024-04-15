@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app-production:
+    container_name: chess-web-production
+    # docker compose sẽ build image từ DockerFile trong thư mục hiện tại ( . )
+    image: chess-web-prod-i
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - "3000:80"
