@@ -4,12 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --mode development",
+    "dev": "vite",
     "build": "vite build --mode production",
     "start": "serve -s dist ",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --fix --ext js,jsx --report-unused-disable-directives",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docker-dev-up": "docker-compose -f docker-compose.dev.yaml up",
+    "docker-prod-up": "docker-compose -f docker-compose.prod.yaml up",
+    "docker-dev-build": " docker-compose -f docker-compose.dev.yaml build",
+    "docker-prod-build": " docker-compose -f docker-compose.prod.yaml build"
+
   },
   "dependencies": {
     "antd": "^5.16.1",
