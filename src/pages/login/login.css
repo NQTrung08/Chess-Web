@@ -1,0 +1,10 @@
+.login-social-container img.img-icon {
+    position: absolute;
+    top: calc(50% - 15px);
+    border-radius: 50%;
+}
+
+.btn-login-social:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
